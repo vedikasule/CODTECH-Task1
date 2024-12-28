@@ -58,5 +58,7 @@ Histograms, scatter plots, heatmaps, box plots, and pair plots are used to make 
 Dataset:
 The Iris Dataset, a well-known dataset in machine learning, includes measurements of flowers and their species (Setosa, Versicolor, and Virginica). It is widely used for classification tasks.
 
-![Screenshot (137)](https://github.com/user-attachments/assets/0b901ee2-b933-4b12-a38a-793c52f65a1f)
+![Screenshot (137)](https://github.com/user-attachments/assets/0b901ee2-b933-4b12-a38a-793c52f65a1f) 
+![Screenshot (138)](https://github.com/user-attachments/assets/c23456fb-ee78-42b9-a2c2-f46594f4f2d9)
+
 
