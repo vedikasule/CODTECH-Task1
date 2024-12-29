@@ -91,40 +91,63 @@ The Iris Dataset, a well-known dataset in machine learning, includes measurement
 CODE
 
 /* TASK1 */
+
 import pandas as pd
+
 import numpy as np
+
 import seaborn as sns
+
 import matplotlib.pyplot as plt
 
 iris=pd.read_csv("iris_dataset.csv")
 
 print(iris.info())
+
 print(iris.describe())
+
 print(iris.isnull().sum())
 
-# Ploting histograms for numeric columns.
+/*Ploting histograms for numeric columns.*/
+
 iris.hist(figsize=(10,9), bins=20, color='skyblue', edgecolor='black')
+
 plt.suptitle('FEATURE DISTRIBUTION', fontsize=15)
+
 plt.show()
 
-# Correlation Analysis.
+/*Correlation Analysis.*/
+
 plt.figure(figsize=(10, 8))
+
 sns.heatmap(correlation_matrix, annot=True, cmap='pink', fmt=".2f")
+
 plt.title("Correlation Matrix")
+
 plt.show()
 
-# Outlier Detection.
+/*Outlier Detection.*/
+
 plt.figure(figsize=(10,8))
+
 sns.boxplot(data=iris.iloc[:,:-1], palette='Set3')
+
 plt.title('Box Plot for Outlier Detection', fontsize=15)
+
 plt.show()
 
-# Feature Relationships.
+/* Feature Relationships.*/
+
 sns.scatterplot(data=iris, x='sepal.length', y='sepal.width', hue='variety', palette='Set2')
+
 plt.title('Sepal Length vs Sepal Width', fontsize=14)
+
 plt.show()
+
 pairplot = sns.pairplot(iris, hue='variety', diag_kind='kde', palette='Set2')
+
 pairplot.fig.suptitle('Feature Relationships', y=1.02, fontsize=16) 
+
 plt.show()
 
 
